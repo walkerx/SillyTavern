@@ -19,7 +19,7 @@ dnsPreferIPv6: false
 # -- BROWSER LAUNCH CONFIGURATION --
 browserLaunch:
   # Open the browser automatically on server startup.
-  enabled: true
+  enabled: false
   # Browser to use for opening the URL.
   # NOT SUPPORTED ON ANDROID DEVICES.
   # - Use "default" to use the system default browser
@@ -51,7 +51,7 @@ ssl:
   keyPassphrase: ""
 # -- SECURITY CONFIGURATION --
 # Toggle whitelist mode
-whitelistMode: true
+whitelistMode: false
 # Whitelist will also verify IP in X-Forwarded-For / X-Real-IP headers
 enableForwardedWhitelist: true
 # Whitelist of allowed IP addresses
@@ -61,11 +61,11 @@ whitelist:
 # Automatically whitelist Docker host and gateway IPs
 whitelistDockerHosts: true
 # Toggle basic authentication for endpoints
-basicAuthMode: false
+basicAuthMode: true
 # Basic authentication credentials
 basicAuthUser:
-  username: "user"
-  password: "password"
+  username: "walker"
+  password: "silly@2025"
 # Enables CORS proxy middleware
 enableCorsProxy: false
 # -- REQUEST PROXY CONFIGURATION --
@@ -79,13 +79,13 @@ requestProxy:
     - localhost
     - 127.0.0.1
 # Enable multi-user mode
-enableUserAccounts: false
+enableUserAccounts: true
 # Enable discreet login mode: hides user list on the login screen
-enableDiscreetLogin: false
+enableDiscreetLogin: true
 # If `basicAuthMode` and this are enabled then
 # the username and passwords for basic auth are the same as those
 # for the individual accounts
-perUserBasicAuth: false
+perUserBasicAuth: true
 
 # -- SSO LOGIN CONFIGURATION --
 sso:
