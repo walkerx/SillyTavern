@@ -118,8 +118,10 @@ hostWhitelist:
   # Examples:
   # - example.com
   # - .trycloudflare.com
-  hosts: [super-chat.zeabur.app]
-
+  hosts: 
+    - super-chat.zeabur.app
+    - chat.caterpillar.fit
+    
 # User session timeout *in seconds* (defaults to 24 hours).
 ## Set to a positive number to expire session after a certain time of inactivity
 ## Set to 0 to expire session when the browser is closed
