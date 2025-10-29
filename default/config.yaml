@@ -110,7 +110,7 @@ sso:
 # Host whitelist configuration. Recommended if you're using a listen mode
 hostWhitelist:
   # Enable or disable host whitelisting
-  enabled: false
+  enabled: true
   # Scan incoming requests for potential host header spoofing
   scan: true
   # List of allowed hosts. Do not include localhost or IPs, these are safe.
@@ -118,7 +118,7 @@ hostWhitelist:
   # Examples:
   # - example.com
   # - .trycloudflare.com
-  hosts: []
+  hosts: [super-chat.zeabur.app]
 
 # User session timeout *in seconds* (defaults to 24 hours).
 ## Set to a positive number to expire session after a certain time of inactivity
